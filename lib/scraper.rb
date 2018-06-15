@@ -117,4 +117,4 @@ end
 cli = CommandLineInterface.new
 cli.play
 
-performance_art = Genre.new("Performance art")
+# performance_art = Genre.new("Performance art")
