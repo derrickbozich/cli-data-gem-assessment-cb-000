@@ -76,11 +76,8 @@ class Genre
 
   def initialize(name)
     @name = name
-    @artists = []
+    # @artists = []
   end
-
-
-
 end
 
 class CommandLineInterface
