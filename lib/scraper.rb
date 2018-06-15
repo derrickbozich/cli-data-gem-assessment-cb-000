@@ -70,6 +70,7 @@ class Artist
 end
 
 class Genre
+  attr_accessor :name
 end
 
 class CommandLineInterface
