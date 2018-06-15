@@ -70,7 +70,7 @@ class Artist
 end
 
 class Genre
-  attr_accessor :name
+  attr_accessor :name, :artist
 
   @@all = []
 
@@ -80,10 +80,11 @@ class Genre
       new_genre = @@all.find {|g| g.name == name}
       @@all << new_genre
     end
-  
   end
 
-  
+  def self.all
+    @@all
+  end
 end
 
 class CommandLineInterface
@@ -115,3 +116,5 @@ end
 
 cli = CommandLineInterface.new
 cli.play
+
+performance_art = Genre.new("Performance art")
