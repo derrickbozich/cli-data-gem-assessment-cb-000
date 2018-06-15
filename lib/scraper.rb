@@ -70,13 +70,15 @@ class Artist
 end
 
 class Genre
-  attr_accessor :name
+  attr_accessor :name, :artists
 
   @@all = []
 
   def initialize(name)
     @name = name
   end
+
+
 end
 
 class CommandLineInterface
