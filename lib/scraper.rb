@@ -76,7 +76,9 @@ class Genre
 
   def initialize(name)
     @name = name
+    @artists = []
   end
+
 
 
 end
@@ -110,3 +112,8 @@ end
 
 cli = CommandLineInterface.new
 cli.play
+
+# performance_art = Genre.new("Performance art")
+# marina = Artist.new(:name => "Marina", :known_for => "Performance art")
+#
+# performance_art.artists.push(marina)
